@@ -20,6 +20,7 @@
 		D0C78F4F2A759ADA006EE0DE /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78F4E2A759ADA006EE0DE /* APError.swift */; };
 		D0C78F512A75C185006EE0DE /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78F502A75C185006EE0DE /* AppetizerListViewModel.swift */; };
 		D0C78F532A75CAC7006EE0DE /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78F522A75CAC7006EE0DE /* Alert.swift */; };
+		D0C78F552A75D641006EE0DE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78F542A75D641006EE0DE /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		D0C78F4E2A759ADA006EE0DE /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		D0C78F502A75C185006EE0DE /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 		D0C78F522A75CAC7006EE0DE /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		D0C78F542A75D641006EE0DE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				D0C78F4E2A759ADA006EE0DE /* APError.swift */,
 				D0C78F502A75C185006EE0DE /* AppetizerListViewModel.swift */,
 				D0C78F522A75CAC7006EE0DE /* Alert.swift */,
+				D0C78F542A75D641006EE0DE /* LoadingView.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				D05B49DC2A6E2CEC00E3BDB3 /* Appetizer.swift in Sources */,
 				D0C78F512A75C185006EE0DE /* AppetizerListViewModel.swift in Sources */,
 				D00B5DEF29F1E61000D3CC91 /* AppetizerTabView.swift in Sources */,
+				D0C78F552A75D641006EE0DE /* LoadingView.swift in Sources */,
 				D00B5DED29F1E61000D3CC91 /* AppetizersApp.swift in Sources */,
 				D0C78F4D2A75989A006EE0DE /* NetworkManager.swift in Sources */,
 				D05B49DE2A6E376F00E3BDB3 /* AppetizerListCell.swift in Sources */,

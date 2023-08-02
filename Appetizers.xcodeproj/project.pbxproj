@@ -21,6 +21,8 @@
 		D0C78F512A75C185006EE0DE /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78F502A75C185006EE0DE /* AppetizerListViewModel.swift */; };
 		D0C78F532A75CAC7006EE0DE /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78F522A75CAC7006EE0DE /* Alert.swift */; };
 		D0C78F552A75D641006EE0DE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78F542A75D641006EE0DE /* LoadingView.swift */; };
+		D0C78F572A76FB08006EE0DE /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78F562A76FB08006EE0DE /* ImageLoader.swift */; };
+		D0C78F662A7711D5006EE0DE /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78F652A7711D5006EE0DE /* AppetizerDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		D0C78F502A75C185006EE0DE /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 		D0C78F522A75CAC7006EE0DE /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		D0C78F542A75D641006EE0DE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		D0C78F562A76FB08006EE0DE /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		D0C78F652A7711D5006EE0DE /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,20 +75,12 @@
 		D00B5DEB29F1E61000D3CC91 /* Appetizers */ = {
 			isa = PBXGroup;
 			children = (
+				D0C78F602A7702CE006EE0DE /* UI */,
+				D0C78F5F2A7702C4006EE0DE /* Model */,
+				D0C78F5B2A77021E006EE0DE /* Utilities */,
 				D00B5DEC29F1E61000D3CC91 /* AppetizersApp.swift */,
-				D00B5DEE29F1E61000D3CC91 /* AppetizerTabView.swift */,
 				D00B5DF029F1E61100D3CC91 /* Assets.xcassets */,
 				D00B5DF229F1E61100D3CC91 /* Preview Content */,
-				D00B5DFA29F1E6D000D3CC91 /* AppetizerListView.swift */,
-				D00B5DFC29F1E6DB00D3CC91 /* AccountView.swift */,
-				D00B5DFE29F1E6E500D3CC91 /* OrderView.swift */,
-				D05B49DB2A6E2CEC00E3BDB3 /* Appetizer.swift */,
-				D05B49DD2A6E376F00E3BDB3 /* AppetizerListCell.swift */,
-				D0C78F4C2A75989A006EE0DE /* NetworkManager.swift */,
-				D0C78F4E2A759ADA006EE0DE /* APError.swift */,
-				D0C78F502A75C185006EE0DE /* AppetizerListViewModel.swift */,
-				D0C78F522A75CAC7006EE0DE /* Alert.swift */,
-				D0C78F542A75D641006EE0DE /* LoadingView.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -95,6 +91,112 @@
 				D00B5DF329F1E61100D3CC91 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D0C78F582A76FF55006EE0DE /* AppetizerList */ = {
+			isa = PBXGroup;
+			children = (
+				D05B49DD2A6E376F00E3BDB3 /* AppetizerListCell.swift */,
+				D00B5DFA29F1E6D000D3CC91 /* AppetizerListView.swift */,
+				D0C78F502A75C185006EE0DE /* AppetizerListViewModel.swift */,
+				D0C78F652A7711D5006EE0DE /* AppetizerDetailView.swift */,
+			);
+			path = AppetizerList;
+			sourceTree = "<group>";
+		};
+		D0C78F592A76FF83006EE0DE /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				D00B5DFC29F1E6DB00D3CC91 /* AccountView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		D0C78F5A2A76FF96006EE0DE /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				D00B5DFE29F1E6E500D3CC91 /* OrderView.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		D0C78F5B2A77021E006EE0DE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D0C78F5E2A77024C006EE0DE /* Extensions */,
+				D0C78F5D2A77022F006EE0DE /* Network */,
+				D0C78F5C2A770228006EE0DE /* Alert */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D0C78F5C2A770228006EE0DE /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				D0C78F4E2A759ADA006EE0DE /* APError.swift */,
+				D0C78F522A75CAC7006EE0DE /* Alert.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		D0C78F5D2A77022F006EE0DE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D0C78F4C2A75989A006EE0DE /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D0C78F5E2A77024C006EE0DE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D0C78F5F2A7702C4006EE0DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D05B49DB2A6E2CEC00E3BDB3 /* Appetizer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0C78F602A7702CE006EE0DE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D0C78F612A7702EE006EE0DE /* Views */,
+				D0C78F592A76FF83006EE0DE /* Account */,
+				D0C78F582A76FF55006EE0DE /* AppetizerList */,
+				D0C78F5A2A76FF96006EE0DE /* Order */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D0C78F612A7702EE006EE0DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D00B5DEE29F1E61000D3CC91 /* AppetizerTabView.swift */,
+				D0C78F642A77032E006EE0DE /* UIKit Components */,
+				D0C78F622A7702F6006EE0DE /* Image */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D0C78F622A7702F6006EE0DE /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				D0C78F562A76FB08006EE0DE /* ImageLoader.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		D0C78F642A77032E006EE0DE /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				D0C78F542A75D641006EE0DE /* LoadingView.swift */,
+			);
+			path = "UIKit Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,10 +277,12 @@
 				D0C78F552A75D641006EE0DE /* LoadingView.swift in Sources */,
 				D00B5DED29F1E61000D3CC91 /* AppetizersApp.swift in Sources */,
 				D0C78F4D2A75989A006EE0DE /* NetworkManager.swift in Sources */,
+				D0C78F662A7711D5006EE0DE /* AppetizerDetailView.swift in Sources */,
 				D05B49DE2A6E376F00E3BDB3 /* AppetizerListCell.swift in Sources */,
 				D0C78F532A75CAC7006EE0DE /* Alert.swift in Sources */,
 				D00B5DFB29F1E6D000D3CC91 /* AppetizerListView.swift in Sources */,
 				D00B5DFF29F1E6E500D3CC91 /* OrderView.swift in Sources */,
+				D0C78F572A76FB08006EE0DE /* ImageLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

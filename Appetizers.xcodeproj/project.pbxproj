@@ -25,6 +25,8 @@
 		D0C78F662A7711D5006EE0DE /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78F652A7711D5006EE0DE /* AppetizerDetailView.swift */; };
 		D0C78F692A802BD8006EE0DE /* RectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78F682A802BD8006EE0DE /* RectangleButton.swift */; };
 		D0C78F6B2A802CAE006EE0DE /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78F6A2A802CAE006EE0DE /* XDismissButton.swift */; };
+		D0C78F6D2A809F1D006EE0DE /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78F6C2A809F1D006EE0DE /* AccountViewModel.swift */; };
+		D0C78F6F2A809F34006EE0DE /* isValidEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78F6E2A809F34006EE0DE /* isValidEmail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		D0C78F652A7711D5006EE0DE /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 		D0C78F682A802BD8006EE0DE /* RectangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleButton.swift; sourceTree = "<group>"; };
 		D0C78F6A2A802CAE006EE0DE /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
+		D0C78F6C2A809F1D006EE0DE /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		D0C78F6E2A809F34006EE0DE /* isValidEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isValidEmail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				D00B5DFC29F1E6DB00D3CC91 /* AccountView.swift */,
+				D0C78F6C2A809F1D006EE0DE /* AccountViewModel.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 		D0C78F5E2A77024C006EE0DE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D0C78F6E2A809F34006EE0DE /* isValidEmail.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -296,8 +302,10 @@
 				D05B49DE2A6E376F00E3BDB3 /* AppetizerListCell.swift in Sources */,
 				D0C78F532A75CAC7006EE0DE /* Alert.swift in Sources */,
 				D00B5DFB29F1E6D000D3CC91 /* AppetizerListView.swift in Sources */,
+				D0C78F6F2A809F34006EE0DE /* isValidEmail.swift in Sources */,
 				D00B5DFF29F1E6E500D3CC91 /* OrderView.swift in Sources */,
 				D0C78F572A76FB08006EE0DE /* ImageLoader.swift in Sources */,
+				D0C78F6D2A809F1D006EE0DE /* AccountViewModel.swift in Sources */,
 				D0C78F6B2A802CAE006EE0DE /* XDismissButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

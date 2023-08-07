@@ -21,7 +21,7 @@ struct AccountView: View {
                         .textInputAutocapitalization(.never)
                     DatePicker("Date of Birth", selection: $viewModel.birthDate, displayedComponents: .date)
                     Button("Save Changes") {
-                        print("Save")
+                        viewModel.saveChanges()
                     }
                 }
                 
@@ -32,6 +32,11 @@ struct AccountView: View {
                 .toggleStyle(SwitchToggleStyle(tint: .mint))
             }
             .navigationTitle("✅ Account")
+            .alert(item: $viewModel.alertItem) { alertItem in
+                Alert(title: alertItem.title,
+                      message: alertItem.message,
+                      dismissButton: alertItem.dismissButton)
+            }
         }
     }
 }
